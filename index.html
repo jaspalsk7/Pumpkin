@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pumpkin - Indisches Restaurant</title>
+    <style>
+        body {
+            font-family: 'Noto Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background-color: #e07a5f;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+        }
+        footer {
+            background-color: #e07a5f;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .container {
+            max-width: 960px;
+            margin: auto;
+        }
+        .menu-item {
+            margin-bottom: 20px;
+        }
+        a {
+            color: #e07a5f;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        h1, h2, h3 {
+            color: #e07a5f;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pumpkin - Indisches Restaurant</h1>
+        <p>Seit dem 1. Februar geöffnet an der Luppmenstrasse 13, 8320 Fehraltorf</p>
+    </header>
+    <section id="menu">
+        <div class="container">
+            <h2>Über Uns</h2>
+            <h3>Willkommen bei Restaurant Pumpkin!</h3>
+            <p>Wir freuen uns, Sie in unserem neu eröffneten indischen Restaurant begrüßen zu dürfen! Bei Restaurant Pumpkin bieten wir authentische indische Küche mit einer Vielzahl von köstlichen Gerichten, die mit traditionellen Gewürzen und frischen Zutaten zubereitet werden.</p>
+            <p>Unser Restaurant befindet sich unter der Adresse:</p>
+            <p>Luppmenstrasse 13, 8320 Fehraltorf</p>
+            <p>Für Takeaway oder Lieferung rufen Sie bitte an:</p>
+            <p>Telefon: <a href="tel:+41789106938">078 910 69 38</a> oder <a href="tel:+41449550845">044 955 08 45</a></p>
+            <p>Unser Team besteht aus leidenschaftlichen Köchen, die darauf bedacht sind, Ihnen ein unvergessliches kulinarisches Erlebnis zu bieten. Von klassischen Currys bis hin zu würzigen Tandoori-Spezialitäten gibt es für jeden Geschmack etwas zu entdecken.</p>
+            <p>Besuchen Sie uns und erleben Sie die Aromen Indiens bei Restaurant Pumpkin!</p>
+
+            <h2>Unser Menü</h2>
+            <div class="menu-item">
+                <h3>Suppen</h3>
+                <p>Indische Linsensuppe (Lentil soup) CHF7.50</p>
+                <p>Indische Hühnersuppe (Chicken soup) CHF9.00</p>
+                <p>Tomatensuppe CHF8.00</p>
+            </div>
+            <!-- ... (existing menu items) ... -->
+
+        </div>
+    </section>
+    <section id="reservation">
+        <div class="container">
+            <h2>Reservierungen</h2>
+            <p>Rufen Sie uns an, um einen Tisch zu reservieren: Telefon: <a href="tel:+41789106938">078 910 69 38</a> oder <a href="tel:+41449550845">044 955 08 45</a></p>
+        </div>
+    </section>
+    <footer>
+        <p>© 2024 Pumpkin - Indisches Restaurant</p>
+    </footer>
+
+    <!-- Smooth scrolling script -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
