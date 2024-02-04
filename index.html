@@ -4,75 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Genießen Sie authentische indische Küche im neu eröffneten Restaurant Pumpkin. Frische Zutaten und traditionelle Gewürze für ein unvergessliches kulinarisches Erlebnis.">
+    <meta name="description" content="Erleben Sie authentische indische Küche im neu eröffneten Restaurant Pumpkin. Frische Zutaten und traditionelle Gewürze für ein unvergessliches kulinarisches Erlebnis.">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <title>Pumpkin - Indisches Restaurant</title>
-    <style>
-        body {
-            font-family: 'Noto Sans', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f8f8;
-            color: #333;
-        }
-
-        header {
-            background-color: #e07a5f;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-
-        section {
-            padding: 40px;
-            background-color: #fff;
-            margin-bottom: 40px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        footer {
-            background-color: #e07a5f;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-
-        .container {
-            max-width: 960px;
-            margin: auto;
-        }
-
-        .menu-item {
-            margin-bottom: 30px;
-            padding-bottom: 30px;
-            border-bottom: 1px solid #ddd;
-        }
-
-        a {
-            color: #e07a5f;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        h1, h2, h3 {
-            color: #e07a5f;
-        }
-    </style>
 </head>
 
 <body>
     <header>
-        <h1 style="font-size: 2em;">Pumpkin - Indisches Restaurant</h1>
-        <p>Seit dem 1. Februar geöffnet an der Luppmenstrasse 13, 8320 Fehraltorf</p>
+        <div class="container">
+            <h1>Pumpkin - Indisches Restaurant</h1>
+            <p>Seit dem 1. Februar geöffnet an der Luppmenstrasse 13, 8320 Fehraltorf</p>
+        </div>
     </header>
-    <section id="menu">
+     <section id="menu">
         <div class="container">
             <h2>Über Uns</h2>
             <h3>Willkommen bei Restaurant Pumpkin!</h3>
@@ -151,25 +96,29 @@
             </div>
         </div>
     </section>
+    <section id="gallery">
+        <div class="container">
+            <h2>Galerie</h2>
+            <div class="image-gallery">
+                <img src="image1.jpg" alt="Indisches Gericht 1">
+                <img src="image2.jpg" alt="Indisches Gericht 2">
+                <img src="image3.jpg" alt="Indisches Gericht 3">
+                <!-- Add more images as needed -->
+            </div>
+        </div>
+    </section>
     <section id="reservation">
         <div class="container">
             <h2>Reservierungen</h2>
             <p>Rufen Sie uns an, um einen Tisch zu reservieren: Telefon: <a href="tel:+41789106938">078 910 69 38</a> oder <a href="tel:+41449550845">044 955 08 45</a></p>
         </div>
     </section>
-
-    <!-- Smooth scrolling script -->
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
+    <footer>
+        <div class="container">
+            <p class="watermark">Entworfen und erstellt von MrCode22</p>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
 </body>
 
 </html>
