@@ -33,7 +33,7 @@ header {
     color: #fff;
     padding: 20px 0;
     text-align: center;
-    opacity: 1; /* Make header visible immediately */
+    opacity: 100; /* Make header visible immediately */
     animation: fadeInUp 1s forwards;
 }
 
