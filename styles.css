@@ -37,6 +37,12 @@ header {
     animation: fadeInUp 1s forwards;
 }
 
+title {
+    color: #ffffff!;
+    
+}
+    
+    
 /* Title */
 h1 {
     font-size: 2.5em;
